@@ -1,0 +1,108 @@
+h1 {
+    border: 5px solid red;
+    transition: all 0.3s;
+}
+.a-1 {
+    background-color: pink;
+    color: black;
+}
+.a-1:hover {
+    background-color: bisque;
+}
+.a-1:active {
+    letter-spacing: 20px;
+}
+.a-2 {
+    background-color: violet;
+    color: white;
+}
+.a-2:hover {
+    background-color:aqua;
+}
+.a-2:active {
+    letter-spacing: 30px;
+}
+.a-3 {
+    background-color: red;
+    color: yellow;
+}
+.a-3:hover {
+    background-color: blue;
+}
+.a-3:active {
+    letter-spacing: 35px;
+}
+.a-4 {
+    background-color: green;
+    color: black;
+}
+.a-4:hover {
+    background-color: olive;
+}
+.a-4:active {
+    letter-spacing: 25px;
+}
+.a-5 {
+    background-color: skyblue;
+    color: red;
+}
+.a-5:hover {
+    background-color: pink;
+}
+.a-5:active {
+    letter-spacing: -20px;
+}
+
+.a-6 {
+        background-color: purple;
+        color: black;
+        width: 1000px;
+        height: 300px;
+    }
+.a-6:hover {
+        background-color: bisque;
+    }
+
+.a-11:active {
+    background-color: blue;
+}
+.a-11:hover {
+    background-color: gray;
+}
+/*
+    ::seletion: 요소의 글자를 드레그한 상태
+    => 배경과 글자에 관련된 속성만 스타일할 수 있다.
+*/
+.a-13::selection {
+    background-color: orangered;
+    color: white;
+}
+.a-14:active {
+    background-color:blanchedalmond;
+}
+.a-14:hover {
+    background-color:black;
+}
+.a-15::selection {
+    background-color:red;
+    color:pink;
+}
+input:focus {
+    background-color: blue;
+}
+*::seletion {
+
+}
+::selection {
+
+}
+:hover {
+
+}
+/*
+:hover, :active => 가상 클래스 선택자 (전체적용)
+(pseudo-class selector)
+
+::selection, ::before, ::after => 가상 요소 선택자 (일부만 적용)
+(pseudo-element selector)
+*/
