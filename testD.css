@@ -1,0 +1,59 @@
+.GNB {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    height: 100px;
+    background-color: ivory;
+    border-bottom: 2px solid black;
+    margin: 0 auto;
+    position: re; /* 화면 상단에 고정 / relative 쓰면 배너도 같이 스크롤 됨 */
+    width: 100%; /* 화면 너비만큼 너비 지정 */
+    z-index: 1000; /* 다른 요소들보다 위에 표시되도록 설정 */
+}
+
+body {
+    margin: auto 0; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div {
+    font-size: 60px;
+    text-align: center;
+    line-height: 430px;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) { 
+    div {
+        font-size: 30px;
+        font-weight: normal;
+        width: 50%; /* 화면 너비가 최대 800px 이상일 때, 요소를 2열로 배치 */
+    }
+    }
+
+@media (min-width: 801px) {
+    div {
+        width: 100%; /* 화면 너비가 최소 800px 이상일 때, 요소를 4열로 배치 */
+    }
+}
+
+
+.RedBox {
+    background-color: red;
+}
+
+.OrangeBox {
+    background-color: orange;
+}
+
+.PinkBox {
+    background-color: pink;
+}
+
+.SkyblueBox {
+    background-color: skyblue;
+}
+
+
